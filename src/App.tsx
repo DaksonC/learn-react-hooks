@@ -1,6 +1,7 @@
-import React from 'react';
-import logo from './logo.svg';
+import logo from './assets/logo.svg';
+import code from './assets/code.png';
 import './App.css';
+import { LearnUseState } from './components';
 
 function App() {
   return (
@@ -18,7 +19,17 @@ function App() {
         >
           Learn React
         </a>
+        <a
+          className="App-link"
+          href="#learn-useState"
+        >
+          Learn useState
+        </a>
       </header>
+      <div className="hooks" id="learn-useState">
+        <LearnUseState />
+        <img src={code} className="code-image" alt="code" />
+      </div>
     </div>
   );
 }

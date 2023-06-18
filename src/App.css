@@ -28,11 +28,53 @@
   color: #61dafb;
 }
 
+.hooks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  color: antiquewhite;
+  background-color: #282c34;
+  border-top: #61dafb 1px solid;
+}
+
+button {
+  background-color: #282c34;
+  color: antiquewhite;
+  border: #61dafb 1px solid;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #61dafb;
+  color: #282c34;
+}
+
+.code-image {
+  width: 500px;
+  height: 500px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hooks {
+    flex-direction: column;
+  }
+
+  .code-image {
+    width: auto;
+    height: auto;
   }
 }
