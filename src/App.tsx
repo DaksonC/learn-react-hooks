@@ -2,10 +2,13 @@ import logo from './assets/logo.svg';
 import code from './assets/code.png';
 import './App.css';
 import { LearnUseState } from './components';
+import { LearnUseEffect } from './components';
+import { Header } from './components/Header';
 
 function App() {
   return (
     <div className="App">
+      <Header />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -19,15 +22,13 @@ function App() {
         >
           Learn React
         </a>
-        <a
-          className="App-link"
-          href="#learn-useState"
-        >
-          Learn useState
-        </a>
       </header>
       <div className="hooks" id="learn-useState">
         <LearnUseState />
+        <img src={code} className="code-image" alt="code" />
+      </div>
+      <div className="hooks" id="learn-useEffect">
+        <LearnUseEffect />
         <img src={code} className="code-image" alt="code" />
       </div>
     </div>

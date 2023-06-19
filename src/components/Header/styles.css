@@ -1,0 +1,123 @@
+.navbar {
+  background-color: transparent;
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  transition: background-color 0.65s ease;
+}
+
+.navbar.colorChange {
+  background-color: #22252e;
+  color: #f5ecec;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  text-decoration: none;
+  color: #f5ecec;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.hamburguer {
+  display: none;
+}
+
+
+@media (max-width: 768px) {
+  .hamburguer {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 3;
+    width: 30px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+  }
+
+  .hamburguer span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background-color: #fcf7f7;
+    border-radius: 4px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+  }
+
+  .hamburguer:hover {
+    background-color: transparent;
+  }
+
+  .hamburguer span:nth-child(1) {
+    top: 0px;
+  }
+
+  .hamburguer span:nth-child(2) {
+    top: 10px;
+  }
+
+  .hamburguer span:nth-child(3) {
+    top: 20px;
+  }
+
+  .hamburguer.open span:nth-child(1) {
+    top: -100px;
+  }
+
+  .hamburguer.open span:nth-child(2) {
+    transform: rotate(45deg);
+  }
+
+  .hamburguer.open span:nth-child(3) {
+    top: 10px;
+    transform: rotate(-45deg);
+  }
+
+  .menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding-top: 90px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: #22252e;
+    transition: top .3s ease-in-out;
+    z-index: 1;
+  }
+
+  .menu.open {
+    top: 0;
+  }
+
+  .menu a {
+    display: block;
+    padding: 0 1rem;
+  }
+}
