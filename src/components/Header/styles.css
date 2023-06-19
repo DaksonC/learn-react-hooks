@@ -29,9 +29,13 @@
 .logo {
   text-decoration: none;
   color: #f5ecec;
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
   cursor: pointer;
   z-index: 2;
+}
+
+.logo:hover {
+  color: #61dafb;
 }
 
 .hamburguer {

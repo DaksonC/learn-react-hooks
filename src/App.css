@@ -54,7 +54,17 @@ button:hover {
   color: #282c34;
 }
 
-.code-image {
+.code-image-use-state {
+  width: 500px;
+  height: 500px;
+}
+
+.code-image-use-effect {
+  width: 600px;
+  height: 800px;
+}
+
+.code-image-use-ref {
   width: 500px;
   height: 500px;
 }
@@ -74,7 +84,9 @@ button:hover {
     flex-direction: column;
   }
 
-  .code-image {
+  .code-image-use-state,
+  .code-image-use-ref,
+  .code-image-use-effect {
     width: auto;
     height: auto;
   }

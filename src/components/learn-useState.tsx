@@ -1,10 +1,13 @@
-import { useState } from "react"; // Importação do useState	
+// Importação do useState
+import { useState } from "react";
 
 export function LearnUseState() {
-  const [count, setCount] = useState(0); // Declaração do useState
+  // Declaração do useState
+  const [count, setCount] = useState(0);
 
   function handleIncrement() {
-    setCount(count + 1); // Atualização do estado
+    // Atualização do estado. Essa é a forma recomendada de atualizar o estado quando o novo valor depende do valor anterior.
+    setCount((prevState) => prevState + 1);
   }
 
   return (

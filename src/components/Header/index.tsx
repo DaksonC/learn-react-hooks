@@ -34,14 +34,58 @@ export function Header() {
         <a
           className="App-link"
           href="#learn-useState"
+          onClick={toggleMenu}
         >
           Learn useState
         </a>
         <a
           className="App-link"
           href="#learn-useEffect"
+          onClick={toggleMenu}
         >
           Learn useEffect
+        </a>
+        <a
+          className="App-link"
+          href="#learn-useRef"
+          onClick={toggleMenu}
+        >
+          Learn useRef
+        </a>
+        <a
+          className="App-link"
+          href="#learn-useReducer"
+          onClick={toggleMenu}
+        >
+          Learn useReducer
+        </a>
+        <a
+          className="App-link"
+          href="#learn-useContext"
+          onClick={toggleMenu}
+        >
+          Learn useContext
+        </a>
+        <a
+          className="App-link"
+          href="#learn-useMemo"
+          onClick={toggleMenu}
+        >
+          Learn useMemo
+        </a>
+        <a
+          className="App-link"
+          href="#learn-useCallback"
+          onClick={toggleMenu}
+        >
+          Learn useCallback
+        </a>
+        <a
+          className="App-link"
+          href="#learn-useLayoutEffect"
+          onClick={toggleMenu}
+        >
+          Learn useLayoutEffect
         </a>
       </div>
     </nav>

@@ -1,9 +1,14 @@
+import {
+  Header,
+  LearnUseEffect,
+  LearnUseRef,
+  LearnUseState
+} from './components';
 import logo from './assets/logo.svg';
 import code from './assets/code.png';
+import useStateCode from './assets/code-use-state.png';
+import useEffectCode from './assets/code-use-effect.png';
 import './App.css';
-import { LearnUseState } from './components';
-import { LearnUseEffect } from './components';
-import { Header } from './components/Header';
 
 function App() {
   return (
@@ -25,11 +30,15 @@ function App() {
       </header>
       <div className="hooks" id="learn-useState">
         <LearnUseState />
-        <img src={code} className="code-image" alt="code" />
+        <img src={useStateCode} className="code-image-use-state" alt="code" />
       </div>
       <div className="hooks" id="learn-useEffect">
         <LearnUseEffect />
-        <img src={code} className="code-image" alt="code" />
+        <img src={useEffectCode} className="code-image-use-effect" alt="code" />
+      </div>
+      <div className="hooks" id="learn-useRef">
+        <LearnUseRef />
+        <img src={code} className="code-image-use-ref" alt="code" />
       </div>
     </div>
   );
