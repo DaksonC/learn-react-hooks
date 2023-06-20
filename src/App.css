@@ -54,6 +54,10 @@ button:hover {
   color: #282c34;
 }
 
+span {
+  color: #61dafb;
+}
+
 .code-image-use-state {
   width: 500px;
   height: 500px;
@@ -65,8 +69,13 @@ button:hover {
 }
 
 .code-image-use-ref {
-  width: 500px;
-  height: 500px;
+  width: 600px;
+  height: 800px;
+}
+
+.code-image-use-reducer {
+  width: 700px;
+  height: 1800px;
 }
 
 @keyframes App-logo-spin {
@@ -86,7 +95,8 @@ button:hover {
 
   .code-image-use-state,
   .code-image-use-ref,
-  .code-image-use-effect {
+  .code-image-use-effect,
+  .code-image-use-reducer {
     width: auto;
     height: auto;
   }

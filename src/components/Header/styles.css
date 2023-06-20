@@ -42,7 +42,6 @@
   display: none;
 }
 
-
 @media (max-width: 768px) {
   .hamburguer {
     display: block;

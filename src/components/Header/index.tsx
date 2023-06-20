@@ -22,7 +22,11 @@ export function Header() {
 
   return (
     <nav className={colorChange ? "navbar colorChange" : "navbar"}>
-      <a href="/" className="logo">
+      <a
+        href="#header"
+        className="logo"
+        onClick={toggleMenu}
+      >
         <h1>React Hooks</h1>
       </a>
       <button className={`hamburguer ${menuOpen ? "open" : ""}`} onClick={toggleMenu}>

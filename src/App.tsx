@@ -1,20 +1,22 @@
 import {
   Header,
   LearnUseEffect,
+  LearnUseReducer,
   LearnUseRef,
   LearnUseState
 } from './components';
 import logo from './assets/logo.svg';
-import code from './assets/code.png';
+import useRefCode from './assets/code-use-ref.png';
 import useStateCode from './assets/code-use-state.png';
 import useEffectCode from './assets/code-use-effect.png';
+import useReducerCode from './assets/code-use-reducer.png';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <header className="App-header">
+      <header className="App-header" id="header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
@@ -38,7 +40,11 @@ function App() {
       </div>
       <div className="hooks" id="learn-useRef">
         <LearnUseRef />
-        <img src={code} className="code-image-use-ref" alt="code" />
+        <img src={useRefCode} className="code-image-use-ref" alt="code" />
+      </div>
+      <div className="hooks" id="learn-useReducer">
+        <LearnUseReducer />
+        <img src={useReducerCode} className="code-image-use-reducer" alt="code" />
       </div>
     </div>
   );
