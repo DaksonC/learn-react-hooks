@@ -1,5 +1,6 @@
 import {
   Header,
+  LearnUseContext,
   LearnUseEffect,
   LearnUseReducer,
   LearnUseRef,
@@ -10,6 +11,7 @@ import useRefCode from './assets/code-use-ref.png';
 import useStateCode from './assets/code-use-state.png';
 import useEffectCode from './assets/code-use-effect.png';
 import useReducerCode from './assets/code-use-reducer.png';
+import useContextCode from './assets/code-use-context.png';
 import './App.css';
 
 function App() {
@@ -45,6 +47,10 @@ function App() {
       <div className="hooks" id="learn-useReducer">
         <LearnUseReducer />
         <img src={useReducerCode} className="code-image-use-reducer" alt="code" />
+      </div>
+      <div className="hooks" id="learn-useContext">
+        <LearnUseContext />
+        <img src={useContextCode} className="code-image-use-context" alt="code" />
       </div>
     </div>
   );

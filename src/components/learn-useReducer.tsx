@@ -78,7 +78,14 @@ export function LearnUseReducer() {
               checked={task.isCompleted}
               onChange={() => toggleTask(index)}
             />
-            <span>{task.name}</span>
+            <span
+              style={{
+                textDecoration:
+                  task.isCompleted ? "line-through" : ""
+              }}
+            >
+              {task.name}
+            </span>
             <button onClick={() => deleteTask(index)}>
               Delete
             </button>
